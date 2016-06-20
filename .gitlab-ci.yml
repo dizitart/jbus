@@ -1,0 +1,17 @@
+image: maven:3.2.5-jdk-6
+
+stages:
+  - build
+  - deploy
+
+build_job:
+  stage: build
+  script: "mvn clean install verify -B"
+
+deploy_job:
+  stage: deploy
+  only:
+    - release
+  script:
+    - echo "<settings><servers><server><id>ossrh</id><username>\$OSSRH_USER</username><password>\$OSSRH_PASS</password></server></servers></settings>" > ~/settings.xml
+    - mvn deploy --settings ~/settings.xml
