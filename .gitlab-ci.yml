@@ -6,7 +6,7 @@ stages:
 
 build_job:
   stage: build
-  script: "mvn clean install verify -B"
+  script: "mvn clean install verify -B -Dgpg.skip=true"
 
 deploy_job:
   stage: deploy
