@@ -1,6 +1,0 @@
-sudo: false
-language: java
-jdk:
-  - oraclejdk7
-install: mvn install -DskipTests=true -Dgpg.skip=true
-script: mvn clean test -B -Dgpg.skip=true
