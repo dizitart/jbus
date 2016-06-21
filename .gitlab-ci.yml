@@ -11,7 +11,9 @@ build_job:
 deploy_job:
   stage: deploy
   only:
-    - release
+    - tags
   script:
-    - echo "<settings><servers><server><id>ossrh</id><username>\$OSSRH_USER</username><password>\$OSSRH_PASS</password></server></servers></settings>" > ~/settings.xml
-    - mvn deploy --settings ~/settings.xml
+#  export/import GPG key - https://dracoblue.net/dev/uploading-snapshots-and-releases-to-maven-central-with-travis/
+    - echo $GPG_SECRET_KEYS | base64 --decode | $GPG_EXECUTABLE --import
+    - echo $GPG_OWNERTRUST | base64 --decode | $GPG_EXECUTABLE --import-ownertrust
+    - mvn clean deploy --settings .ci/settings.xml -B -U

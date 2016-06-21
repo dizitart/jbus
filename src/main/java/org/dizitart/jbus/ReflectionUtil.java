@@ -35,7 +35,7 @@ class ReflectionUtil {
     private static Log logger = LogFactory.getLog(ReflectionUtil.class);
 
     /**
-     * Finds all subscriber methods in the whole class hierarchy of {@param subscribedClass}.
+     * Finds all subscriber methods in the whole class hierarchy of {@code subscribedClass}.
      *
      * */
     static List<ListenerMethod> findSubscribedMethods(Class<?> subscribedClass) {

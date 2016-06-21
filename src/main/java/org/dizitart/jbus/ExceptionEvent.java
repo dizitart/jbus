@@ -33,7 +33,7 @@ public class ExceptionEvent implements HandlerChainAware {
      * Instantiate the exception event.
      *
      * @param exception the exception that was thrown from the subscriber code.
-     * @param exceptionContext contextual information about the {@param exception}.
+     * @param exceptionContext contextual information about the {@code exception}.
      * */
     public ExceptionEvent(Throwable exception, ExceptionContext exceptionContext) {
         this.exception = exception;
