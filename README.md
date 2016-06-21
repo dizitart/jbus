@@ -1,5 +1,9 @@
 JBus
 =======
+
+[![Javadocs](https://www.javadoc.io/badge/org.dizitart/jbus.svg)](https://www.javadoc.io/doc/org.dizitart/jbus) 
+[![build status](https://gitlab.com/dizitart/jbus/badges/master/build.svg)](https://gitlab.com/dizitart/jbus/commits/master)
+
 An event bus for java 1.6+. It dispatches event to registered listeners.
 
 It is a simple but powerful publish-subscribe event system. It requires object to
@@ -63,6 +67,20 @@ Example
 ```
 
 It is that simple.
+
+Installation
+-----------------------------
+
+JBus is available from the Maven Central Repository using the following coordinates:
+
+```xml
+    <dependency>
+        <groupId>org.dizitart</groupId>
+        <artifactId>jbus</artifactId>
+        <version>1.0</version>
+    </dependency>
+```
+
 
 Details
 -----------------------------

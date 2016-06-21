@@ -28,7 +28,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
  * @author Anindya Chatterjee.
  */
 class DefaultHandlerChain extends CopyOnWriteArrayList<ListenerMethod> implements HandlerChain {
-    boolean interrupt;
+    volatile boolean interrupt;
 
     DefaultHandlerChain(List<ListenerMethod> subscribers) {
         super(subscribers);
