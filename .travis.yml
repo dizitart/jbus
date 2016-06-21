@@ -2,4 +2,4 @@ sudo: false
 language: java
 jdk:
   - oraclejdk7
-script: mvn clean verify -B
+script: mvn clean verify -B -Dgpg.skip=true
