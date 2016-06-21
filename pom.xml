@@ -41,6 +41,8 @@
         <developer>
             <name>Anindya Chatterjee</name>
             <email>anidotnet@gmail.com</email>
+            <organization>Dizitart</organization>
+            <organizationUrl>https://gitlab.com/dizitart</organizationUrl>
         </developer>
     </developers>
 
@@ -95,6 +97,20 @@
         </dependency>
     </dependencies>
 
+    <distributionManagement>
+        <!-- Repository for snapshots -->
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <!-- Repository for releases -->
+        <repository>
+            <id>ossrh</id>
+            <name>Nexus Release Repository</name>
+            <url>http://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
     <build>
         <plugins>
             <plugin>
@@ -128,18 +144,6 @@
                 <configuration>
                     <source>1.6</source>
                     <target>1.6</target>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.sonatype.plugins</groupId>
-                <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.6.7</version>
-                <extensions>true</extensions>
-                <configuration>
-                    <serverId>ossrh</serverId>
-                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                    <!--<stagingProfileId></stagingProfileId>-->
-                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
                 </configuration>
             </plugin>
         </plugins>

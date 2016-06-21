@@ -1,5 +1,3 @@
-https://javadoc.io/
-
 JBus
 =======
 An event bus for java 1.6+. It dispatches event to registered listeners.
@@ -110,3 +108,15 @@ In case of any error from subscriber code during invocation, the runtime will fi
 for any <code>ExceptionEvent</code> handler registered into the system and dispatch the error along with
 relevant information in <code>ExceptionContext</code> to the handler if found. If no such error handler
 is found, runtime will just log the error and move on.
+
+
+Contribute
+--------------------------
+Please feel free to contribute by creating a pull request at [Gitlab page](https://gitlab.com/dizitart/jbus).
+Please make sure your pull request is small and provided with test code.
+
+
+License
+--------------------------
+This project is distributed under the terms of the Apache License, Version 2.0.
+See file "LICENSE" for further reference.
