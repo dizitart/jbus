@@ -37,7 +37,7 @@ import java.util.List;
  *     hierarchy</li>
  *     <li>subscribed method should accept <b>only one parameter</b> having the type of the event</li>
  * </ol>
- * </p>
+ *
  *
  * {@link #register(Object)} will scan the input object for any method which has been marked
  * with {@link Subscribe} annotation and it will keep track of all such methods found. If the
@@ -191,6 +191,7 @@ public class JBus {
     /**
      * Sets a tag to the event bus for identification.
      *
+     * @param tag the tag to set.
      * */
     public void setTag(String tag) {
         this.tag = tag;

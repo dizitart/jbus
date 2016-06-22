@@ -47,6 +47,8 @@ public @interface Subscribe {
      * Declares whether the subscribed method will be invoked asynchronously.
      *
      * <p>Defaults to {@code false}</p>.
+     *
+     * @return async flag.
      * */
     boolean async() default false;
 }

@@ -47,6 +47,8 @@ public class ExceptionContext {
 
     /**
      * Gets the subscribed method which has thrown the exception.
+     *
+     * @return the subscribed method.
      * */
     public Method getSubscribedMethod() {
         return subscribedMethod;
@@ -54,6 +56,8 @@ public class ExceptionContext {
 
     /**
      * Gets the event which was being handled when the exception was thrown.
+     *
+     * @return the event which was being handled.
      * */
     public Object getEvent() {
         return event;
@@ -61,6 +65,8 @@ public class ExceptionContext {
 
     /**
      * Gets the listener object.
+     *
+     * @return the listener object.
      * */
     public Object getListener() {
         return listener;

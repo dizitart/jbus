@@ -42,6 +42,8 @@ public class ExceptionEvent implements HandlerChainAware {
 
     /**
      * Gets the contextual information about the exception triggering this event.
+     *
+     * @return the exception context.
      * */
     public ExceptionContext getExceptionContext() {
         return exceptionContext;
@@ -49,6 +51,8 @@ public class ExceptionEvent implements HandlerChainAware {
 
     /**
      * Gets the exception triggering this event.
+     *
+     * @return the exception.
      * */
     public Throwable getException() {
         return exception;

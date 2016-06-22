@@ -8,7 +8,7 @@ build_job:
   stage: build
   script:
     - mvn clean install verify -B -Dgpg.skip=true
-    - bash <(curl -s https://codecov.io/bash)
+    - bash <(curl -s https://codecov.io/bash) -X coveragepy || echo "Codecov did not collect coverage reports"
 
 deploy_job:
   stage: deploy
@@ -19,4 +19,4 @@ deploy_job:
     - echo $GPG_SECRET_KEYS | base64 --decode | $GPG_EXECUTABLE --import
     - echo $GPG_OWNERTRUST | base64 --decode | $GPG_EXECUTABLE --import-ownertrust
     - mvn clean deploy --settings .ci/settings.xml -B -U
-    - bash <(curl -s https://codecov.io/bash)
+    - bash <(curl -s https://codecov.io/bash) -X coveragepy || echo "Codecov did not collect coverage reports"
