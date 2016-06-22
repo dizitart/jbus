@@ -78,7 +78,7 @@ JBus is available from the Maven Central Repository using the following coordina
     <dependency>
         <groupId>org.dizitart</groupId>
         <artifactId>jbus</artifactId>
-        <version>1.0</version>
+        <version>{latest.tag.release}</version>
     </dependency>
 ```
 
