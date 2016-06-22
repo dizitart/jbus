@@ -6,7 +6,9 @@ stages:
 
 build_job:
   stage: build
-  script: "mvn clean install verify -B -Dgpg.skip=true"
+  script:
+    - mvn clean install verify -B -Dgpg.skip=true
+    - bash <(curl -s https://codecov.io/bash)
 
 deploy_job:
   stage: deploy
