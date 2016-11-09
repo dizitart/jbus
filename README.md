@@ -131,7 +131,7 @@ is found, runtime will just log the error and move on.
 
 Contribute
 --------------------------
-Please feel free to contribute by creating a pull request at [Gitlab page](https://gitlab.com/dizitart/jbus).
+Please feel free to contribute by creating a pull request.
 Please make sure your pull request is small and provided with test code.
 
 
