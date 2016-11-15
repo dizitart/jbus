@@ -17,8 +17,8 @@
 
 package org.dizitart.jbus;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.lang.ref.WeakReference;
 import java.util.List;
@@ -35,7 +35,7 @@ import static org.dizitart.jbus.ReflectionUtil.findSubscribedMethods;
  * @author Anindya Chatterjee.
  */
 class ListenersRegistry {
-    private Log logger = LogFactory.getLog(getClass());
+    private Logger logger = LoggerFactory.getLogger(getClass());
 
     // keep track of event and its registered subscribed methods
     private Map<Class<?>, List<ListenerMethod>> registry =

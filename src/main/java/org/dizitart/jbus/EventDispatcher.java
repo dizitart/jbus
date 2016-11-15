@@ -17,8 +17,9 @@
 
 package org.dizitart.jbus;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -31,7 +32,7 @@ import java.util.concurrent.Executors;
  * @author Anindya Chatterjee.
  */
 class EventDispatcher {
-    private Log logger = LogFactory.getLog(getClass());
+    private Logger logger = LoggerFactory.getLogger(getClass());
     private final ExecutorService executorService = Executors.newCachedThreadPool();
     private ListenersRegistry listenersRegistry;
     private boolean isShutdownInitiated = false;

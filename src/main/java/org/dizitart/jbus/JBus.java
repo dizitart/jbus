@@ -17,8 +17,8 @@
 
 package org.dizitart.jbus;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
@@ -88,7 +88,7 @@ import java.util.List;
  * @see ExceptionContext
  */
 public class JBus {
-    private Log logger = LogFactory.getLog(getClass());
+    private Logger logger = LoggerFactory.getLogger(getClass());
     private ListenersRegistry listenersRegistry;
     private EventDispatcher eventDispatcher;
     private String tag = "";
