@@ -2,7 +2,7 @@ JBus
 =======
 
 [![Javadocs](https://www.javadoc.io/badge/org.dizitart/jbus.svg)](https://www.javadoc.io/doc/org.dizitart/jbus) 
-[![build status](https://gitlab.com/dizitart/jbus/badges/master/build.svg)](https://gitlab.com/dizitart/jbus/commits/master)
+![Build](https://github.com/dizitart/jbus/workflows/Build/badge.svg)
 [![codecov](https://codecov.io/gl/dizitart/jbus/branch/master/graph/badge.svg)](https://codecov.io/gl/dizitart/jbus)
 [![Code Triagers Badge](https://www.codetriage.com/dizitart/jbus/badges/users.svg)](https://www.codetriage.com/dizitart/jbus)
 
