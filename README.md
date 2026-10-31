@@ -5,6 +5,7 @@ JBus
 ![Build](https://github.com/dizitart/jbus/workflows/Build/badge.svg)
 [![codecov](https://codecov.io/gl/dizitart/jbus/branch/master/graph/badge.svg)](https://codecov.io/gl/dizitart/jbus)
 [![Code Triagers Badge](https://www.codetriage.com/dizitart/jbus/badges/users.svg)](https://www.codetriage.com/dizitart/jbus)
+[![Discord](https://img.shields.io/discord/1565965879177519118?logo=discord&logoColor=white&label=Discord&color=5865F2)](https://discord.dizitart.com)
 
 An event bus for java 1.6+. It dispatches event to registered listeners.
 
